@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<title>Student Registration Form</title>	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+	<form id="registration-form">
+
+		<div class="container">
+
+			<h1>Student Registration Form</h1>
+
+			<hr>
+
+			<label for="firstname">Firstname</label>
+
+			<input type="text" name="firstname" placeholder="Firstname" size="15" required>
+
+			<label for="middlename">Middlename</label>
+
+			<input type="text" name="middlename" placeholder="Middlename" size="15" required>
+
+			<label for="lastname">Lastname</label>
+
+			<input type="text" name="lastname" placeholder="Lastname" size="15"required>
+
+			<div class="select-container">
+
+				<label for="course">Course</label>
+
+				<select id="course" name="course">
+
+					<option value="Course">Course</option>
+
+					<option value="Computer Science">Computer Science</option>
+
+					<option value="Science Laboratory Technology">Science Laboratory Technology</option>
+
+					<option value="Electrical Engineering">Electrical Engineering</option>
+
+					<option value="Computer Engineering">Computer Engineering</option>
+
+					<option value="Mass Communication">Mass Communication</option>
+
+					<option value="Business Administration">Business Administration</option>
+
+				</select>
+
+			</div>
+
+			<div class="radio-container">
+
+				<label>Gender</label><br>
+
+				<input type="radio" value="Male" name="gender" checked> Male   
+
+				<input type="radio" value="Female" name="gender"> Female   
+
+				<input type="radio" value="Other" name="gender"> Other  
+
+			</div>
+
+			<label for="phone">Phone</label>
+
+			<div class="phone-container">
+
+				<input type="text" name="country-code" placeholder="Country Code" value="+234" size="2"/>   
+
+				<input type="text" name="phone" placeholder="Phone Number" size="10" required>   
+
+			</div>
+
+			<label for="address">Current Address</label>
+
+			<textarea id="address" name="address" cols="80" rows="5" placeholder="Current Address" required></textarea>
+
+			<label for="email">Email</label>
+
+			<input type="email" id="email" name="email" placeholder="Enter Email" required>
+
+			<label for="password">Password</label>
+
+			<input type="password" id="password" name="password" placeholder="Enter Password" required>
+
+			<label for="confirm-password">Confirm Password</label>
+
+			<input type="password" id="confirm-password" name="confirm-password" placeholder="Retype Password" required>
+
+			<button type="submit" class="registerbtn">Register</button>
+
+		</div>
+
+	</form>
+
+	
+
+	<script src="script.js"></script>
+
+</body>
+
+</html>
